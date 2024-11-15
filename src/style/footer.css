@@ -115,10 +115,10 @@ footer {
     margin: 0;
 }
 
-#footer-columns p {
+#footer-columns p, #footer-columns ul {
     width: 80%;
     font-family: "Alfred Serif Text Regular";
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #2e2a25;
 }
 
@@ -152,4 +152,12 @@ footer {
 
 #footer-copyright {
     color: #8a8a8d;
+}
+
+#footer-columns ul {
+    list-style-type: initial;
+}
+
+#footer-columns li {
+    line-height: 1.2rem;
 }

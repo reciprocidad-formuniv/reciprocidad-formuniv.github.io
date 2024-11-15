@@ -97,6 +97,14 @@ h3 {
 }
 
 @media screen and (max-width: 820px) {
+    h3 {
+        font-size: 2rem;
+    }
+
+    .respuestas img {
+        width: 20rem;
+    }
+
     .cuestionario {
         flex-direction: column;
     }
