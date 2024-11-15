@@ -1,0 +1,20 @@
+{
+  "name": "reciprocidad-formuniv.github.io",
+  "version": "1.0.0",
+  "description": "Test para el ordinario de Formación Universitaria",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "watch": "npx @11ty/eleventy --watch"
+  },
+  "keywords": [],
+  "author": "Bruno Ancona <brunoanconasala@gmail.com>",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "image-size": "^1.1.1",
+    "terser": "^5.31.2"
+  }
+}

@@ -1,0 +1,28 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #bb8a35;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Alfred Sans Regular";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cfa55e5e;
+}
+
+#header-sides {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-center {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header-sides span {
+    padding: 0 5vw;
+}

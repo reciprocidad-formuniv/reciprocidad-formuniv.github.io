@@ -1,0 +1,22 @@
+name: Deploy
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build page
+      run: |
+        npm ci
+        npm run build
+
+    - name: Publish github pages
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/reciprocidad-formuniv/reciprocidad-formuniv.github.io.git
+        npx gh-pages -d _site -u "github-actions-bot <support+actions@github.com>" --nojekyll
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
